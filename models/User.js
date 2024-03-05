@@ -35,6 +35,17 @@ User.init(
         len: [6],
       },
     },
+    // models/User.js
+    score: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 0,
+    },
+    highScore: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 0,
+    },
   },
   {
     hooks: {
