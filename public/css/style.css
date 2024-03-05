@@ -162,3 +162,34 @@ img {
   align-content: flex-start;
   align-items: center;
 }
+
+/* Additions for Movie Trivia Game layout */
+.movie-trivia {
+  display: flex;
+  justify-content: center; /* Center the movies horizontally */
+  gap: 20px; /* Optional: adds some space between the two movies */
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns the items vertically in the center */
+}
+
+.movie img {
+  max-width: 100%; /* Adjust based on your preference, ensures image is responsive */
+  margin-bottom: 10px; /* Adds some space between the image and the button */
+}
+
+.trivia-intro {
+  text-align: center; /* Center-align the text */
+}
+
+.trivia-intro h2,
+.trivia-intro p {
+  margin: 10px auto; /* Add some vertical spacing and center horizontally */
+}
+
+.movie-select-btn {
+  /* Additional styling for the button if needed */
+}
