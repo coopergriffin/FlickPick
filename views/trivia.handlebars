@@ -1,7 +1,23 @@
-<!-- views/trivia.handlebars -->
-<div class="trivia-game">
-  <div id="movie1" class="movie-option"></div>
-  <div id="movie2" class="movie-option"></div>
-</div>
+<main>
 
-<script src="/js/trivia.js"></script>
+  <h2>Movie Trivia Game</h2>
+
+  <p>{{gameInfo.description}}</p>
+
+  <div class="movie-trivia">
+
+    {{#each gameInfo.movies as |movie|}}
+
+    <div class="movie">
+
+      <img src="{{movie.poster}}" alt="Movie Poster for {{movie.name}}" class="movie-poster">
+
+      <button class="movie-select-btn">{{movie.name}}</button>
+
+    </div>
+
+    {{/each}}
+
+  </div>
+
+</main>
